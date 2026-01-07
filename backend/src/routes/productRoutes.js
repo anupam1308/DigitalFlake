@@ -6,24 +6,24 @@ let products = [
   {
     id: 123,
     name: "Motorola edge",
-    categoryId: 1,              // Mobile
-    subcategoryId: 1,           // Motorola
+    categoryId: 1,              
+    subcategoryId: 1,           
     imageUrl: "/images/products/motorola-edge.jpg",
     status: "Active",
   },
   {
     id: 124,
     name: "HP Pavillion",
-    categoryId: 2,              // Laptop
-    subcategoryId: 2,           // HP
+    categoryId: 2,              
+    subcategoryId: 2,           
     imageUrl: "/images/products/hp-pavillion.jpg",
     status: "Inactive",
   },
   {
     id: 125,
     name: "Apple",
-    categoryId: 3,              // Grocery
-    subcategoryId: 3,           // Fruits
+    categoryId: 3,              
+    subcategoryId: 3,           
     imageUrl: "/images/products/apple.jpg",
     status: "Inactive",
   },

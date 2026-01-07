@@ -4,11 +4,11 @@ import jwt from "jsonwebtoken";
 
 const router = Router();
 
-// temporary in-memory user
+
 const demoUser = {
   id: "1",
   email: "admin1@digitalflake.com",
-  // password: "admin123"
+  
   passwordHash: bcrypt.hashSync("Hero123", 10),
 };
 

@@ -1,9 +1,9 @@
-// backend/src/routes/categoryRoutes.js
+
 import { Router } from "express";
 
 const router = Router();
 
-// temporary in-memory categories WITH images
+
 let categories = [
   {
     id: 1,
@@ -25,12 +25,11 @@ let categories = [
   },
 ];
 
-// GET all categories
+
 router.get("/", (req, res) => {
   res.json(categories);
 });
 
-// POST create category
 router.post("/", (req, res) => {
   const { name, imageUrl, status } = req.body;
 
@@ -49,7 +48,7 @@ router.post("/", (req, res) => {
   res.status(201).json(newCat);
 });
 
-// PUT update category
+
 router.put("/:id", (req, res) => {
   const { id } = req.params;
   const { name, imageUrl, status } = req.body;
@@ -69,7 +68,7 @@ router.put("/:id", (req, res) => {
   res.json(categories[index]);
 });
 
-// DELETE category
+
 router.delete("/:id", (req, res) => {
   const { id } = req.params;
   categories = categories.filter((c) => c.id !== Number(id));

@@ -23,7 +23,7 @@ function Products() {
 
   return (
     <div className="p-6">
-      {/* header bar with title + search + Add New */}
+     
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-lg font-semibold">Product</h1>
 
@@ -42,7 +42,7 @@ function Products() {
         </div>
       </div>
 
-      {/* table */}
+   
       <div className="border rounded-lg overflow-hidden">
         <table className="w-full text-sm">
           <thead>

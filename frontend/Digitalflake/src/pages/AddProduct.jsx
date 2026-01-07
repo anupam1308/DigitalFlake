@@ -21,7 +21,7 @@ function AddProduct() {
       setCategories(catRes.data);
       setSubcategories(subRes.data);
 
-      // set default selected category
+      
       if (catRes.data.length && !categoryId) {
         setCategoryId(catRes.data[0].id);
       }
@@ -30,7 +30,7 @@ function AddProduct() {
     loadData();
   }, [categoryId]);
 
-  // subcategories filtered by selected category
+
   const filteredSubs = subcategories.filter(
     (s) => String(s.categoryId) === String(categoryId)
   );
@@ -66,7 +66,7 @@ function AddProduct() {
         <h1 className="text-xl font-semibold mb-4">Add Product</h1>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Product name */}
+        
           <div>
             <label className="block text-sm mb-1">Product name</label>
             <input
@@ -77,7 +77,7 @@ function AddProduct() {
             />
           </div>
 
-          {/* Category */}
+       
           <div>
             <label className="block text-sm mb-1">Category</label>
             <select
@@ -90,13 +90,13 @@ function AddProduct() {
             >
               {categories.map((c) => (
                 <option key={c.id} value={c.id}>
-                  {c.name} {/* Mobile, Laptop, Grocery from backend */}
+                  {c.name} 
                 </option>
               ))}
             </select>
           </div>
 
-          {/* Sub Category */}
+         
           <div>
             <label className="block text-sm mb-1">Sub Category</label>
             <select
@@ -106,13 +106,13 @@ function AddProduct() {
             >
               {filteredSubs.map((s) => (
                 <option key={s.id} value={s.id}>
-                  {s.name} {/* e.g. Smartphones, Gaming Laptops, Vegetables */}
+                  {s.name} 
                 </option>
               ))}
             </select>
           </div>
 
-          {/* Status */}
+         
           <div>
             <label className="block text-sm mb-1">Status</label>
             <select
@@ -125,7 +125,7 @@ function AddProduct() {
             </select>
           </div>
 
-          {/* Actions */}
+         
           <div className="flex justify-end space-x-3">
             <button
               type="button"

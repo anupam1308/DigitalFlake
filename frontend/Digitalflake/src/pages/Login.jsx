@@ -19,7 +19,7 @@ function Login() {
       localStorage.setItem("df_token", token);
       localStorage.setItem("df_user", JSON.stringify(user));
 
-      // go directly to Category page (inside Dashboard layout)
+      
       navigate("/category");
     } catch (err) {
       setError("Invalid email or password");

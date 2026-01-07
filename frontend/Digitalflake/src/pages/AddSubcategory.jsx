@@ -27,7 +27,7 @@ function AddSubcategory() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // choose image automatically based on category or name
+    
     let imageUrl = "/images/subcategories/default.jpg";
     if (name.toLowerCase().includes("phone")) {
       imageUrl = "/images/subcategories/smartphones.jpg";
